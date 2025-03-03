@@ -1,0 +1,87 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('online\ delivery.jpg') no-repeat center center/cover;
+}
+
+
+
+
+/* Background for the whole booking section */
+.booking-section {
+    background: url('collage1.jpg') no-repeat center center/cover;
+    padding: 50px 0; /* Adds spacing around the booking container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures it covers full screen height */
+}
+
+/* Booking Container */
+.booking-container {
+    width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency for readability */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: black;
+}
+
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 2px solid #ffa500;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Legend Styling */
+legend {
+    font-weight: bold;
+    color: #ff6600;
+    text-align:center
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Inputs */
+input, select {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit Button */
+button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
