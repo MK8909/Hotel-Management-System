@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Black White Circular Rustic Typography Badge Bar Restaurant Brewery Logo_processed.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="booktable.css">
+    
+    <script>
+        function confirmBooking(event) {
+            event.preventDefault();
+            
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            let date = document.getElementById('date').value;
+            let time = document.getElementById('time').value;
+            let guests = document.getElementById('guests').value;
+            let dining = document.getElementById('dining').value;
+            let veg = document.getElementById('veg').value;
+            let nonveg = document.getElementById('nonveg').value;
+            let note = document.getElementById('note').value;
+            
+            let bookingId = Math.floor(100000 + Math.random() * 900000);
+            
+            let confirmationMessage = `<h3>Your Table has been Booked!</h3>
+                <p><strong>Booking ID:</strong> ${bookingId}</p>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone}</p>
+                <p><strong>Date:</strong> ${date}</p>
+                <p><strong>Time:</strong> ${time}</p>
+                <p><strong>Guests:</strong> ${guests}</p>
+                <p><strong>Dining:</strong> ${dining}</p>
+                <p><strong>Guests opting Veg:</strong> ${veg}</p>
+                <p><strong>Guests opting Non Veg:</strong> ${nonveg}</p>
+                <p><strong>Notes:</strong> ${note}</p>`;
+            
+            document.getElementById('confirmation').innerHTML = confirmationMessage;
+        }
+    </script>
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <span>Email: contact@royalcuisines.com</span>
+            <span>Phone: +919111156789</span>
+        </div>
+        <div class="social-links">
+            <a href="#">Follow us on Instagram</a>
+            <a href="#">Follow us on Facebook</a>
+        </div>
+    </div>
+    
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="brand">
+            <img src="Black White Circular Rustic Typography Badge Bar Restaurant Brewery Logo_processed.png" alt="Royal Cuisines Logo" class="logo">
+            <div class="brand-text">
+                <h1 class="restaurant-name">The Royal's Cuisines</h1>
+                <p class="brand-subtitle">A unit of Royal's Group Private Limited</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="basicpage.html">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="#hotels">Hotel & Rooms</a></li>
+                <li><a href="booktable.html">Book a Table</a></li>
+                <li><a href="orderonline.html">Order Online</a></li>
+                <li><a href="location.html">Our Locations</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="booking-section">
+        <div class="booking-container">
+            <h1>Reserve Your Table</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Booking Details</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Abraham" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+919xxxxxxxx" required>
+                    
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="0" required>
+
+                    <label for="veg">Number of Guests (opting Veg):</label>
+                    <input type="number" id="veg" name="veg" min="0" required>
+
+                    <label for="nonveg">Number of Guests (opting Non Veg):</label>
+                    <input type="number" id="nonveg" name="nonveg" min="0" required>
+                    
+                    <label for="dining">Type of Dining:</label>
+                    <select id="dining" name="dining" required>
+                        <option value="garden">Garden Buffet Dining</option>
+                        <option value="rooftop">Rooftop Buffet Dining</option>
+                        <option value="inside">Inside Restaurant Buffet Dining</option>
+                    </select>
+                    
+                    <label for="note">Additional Notes:</label>
+                    <textarea id="note" name="note" placeholder="Add a note (e.g., arrange for a cake)"></textarea>
+                </fieldset>
+                
+                <button type="submit" onclick="window.location.href='confirmtable.html'; return false;">Book Now and Pay Now</button>
+                <button type="button" onclick="confirmBooking(event)">Book Now and Pay Later</button>
+            </form>
+            
+            <div id="confirmation" class="confirmation-message"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!-- Brand Logo Section (Centered at the Top) -->
+        <div class="brand-info">
+            <img src="Black White Circular Rustic Typography Badge Bar Restaurant Brewery Logo_processed.png" alt="The Royal Cuisines" class="brand-logo">
+            <h2>The Royal Cuisines</h2>
+            <p>Experience the taste of royalty</p>
+        </div>
+    
+        <!-- All Sections in One Line -->
+        <div class="footer-sections">
+            <!-- About Us -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Our Community</a></li>
+                </ul>
+            </div>
+    
+            <!-- Menu -->
+            <div class="footer-section">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Our Menus</a></li>
+                    <li><a href="#">Online Delivery</a></li>
+                    <li><a href="#">Deals and Offers</a></li>
+                </ul>
+            </div>
+    
+            <!-- Hotel & Rooms -->
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Catering Service</a></li>
+                    <li><a href="#">Hotel and Rooms</a></li>
+                    <li><a href="#">Events and Banquets</a></li>
+                </ul>
+            </div>
+    
+            <!-- Opening Hours (New Section) -->
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>Mon: 12:00 PM - 10:00 PM</li>
+                    <li>Tues: 12:00 PM - 10:00 PM</li>
+                    <li>Wed: 12:00 PM - 10:00 PM</li>
+                    <li>Thurs: 12:00 PM - 10:00 PM</li>
+                    <li>Fri: 12:00 APM - 10:00 PM</li>
+                    <li>Sat: 12:00 PM - 10:00 PM</li>
+                    <li>Sun: 12:00 PM - 11:00 PM</li>
+                </ul>
+            </div>
+    
+            <!-- Our Locations (Updated with Address, Phone & Google Map) -->
+            <div class="footer-section">
+                <h3>Our Location</h3>
+                <p>Little Mount, Guindy, Chennai, Tamil Nadu - 600032, India</p>
+                <p>Phone: +919111156789</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15555.25144419528!2d80.2178581!3d13.010559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzM4LjAiTiA4MMKwMTInNTYuMyJF!5e0!3m2!1sen!2sin!4v1700000000000"
+                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+    
+            <!-- Social Links (Aligned Like Other Sections) -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Royal Cuisines. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
