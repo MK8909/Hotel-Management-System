@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Service</title>
+    <link rel="stylesheet" href="catering.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Catering Service</h1>
+    </header>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>About Our Catering Service</h2>
+            <p>We provide premium catering services for all kinds of events. Let us make your special occasions even more memorable.</p>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <div class="achievement-item">
+            <img src="menu-icon.png" alt="Menu Items">
+            <h3>MENU ITEMS</h3>
+            <p>500+</p>
+        </div>
+        <div class="achievement-item">
+            <img src="events-icon.png" alt="Successful Events">
+            <h3>SUCCESSFUL EVENTS</h3>
+            <p>3750+</p>
+        </div>
+        <div class="achievement-item">
+            <img src="customers-icon.png" alt="Happy Customers">
+            <h3>HAPPY CUSTOMERS</h3>
+            <p>7500+</p>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2>Our Packages</h2>
+        <p>We offer a variety of catering packages to suit your needs.</p>
+        <a href="packages.html" class="btn">See Our Packages</a>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <select name="package">
+                <option value="basic">Basic Package</option>
+                <option value="premium">Premium Package</option>
+                <option value="luxury">Luxury Package</option>
+            </select>
+            <input type="number" name="guests" placeholder="Approximate Number of Guests" required>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+            <input type="text" name="place" placeholder="Event Location" required>
+            <textarea name="message" placeholder="Additional Message"></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <p id="thank-you-message">Thank you for contacting us. We will reach you soon!</p>
+    </section>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("thank-you-message").style.display = "block";
+        });
+    </script>
+</body>
+</html>
