@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon"
+            href="Black White Circular Rustic Typography Badge Bar Restaurant Brewery Logo_processed.png"
+            type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu - The Royal Cuisines</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="menu.css">
+
+        <script>
+        function showFullScreen(imgSrc) {
+            document.getElementById('fullScreenImage').src = imgSrc;
+            document.getElementById('fullScreenContainer').classList.add('active');
+        }
+        function closeFullScreen() {
+            document.getElementById('fullScreenContainer').classList.remove('active');
+        }
+    </script>
+    </head>
+    <body>
+        <!-- Top Contact Bar -->
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>Email: contact@royalcuisines.com</span>
+                <span>Phone: +919111156789</span>
+            </div>
+            <div class="social-links">
+                <a href="#">Follow us on Instagram</a>
+                <a href="#">Follow us on Facebook</a>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="brand">
+                <img
+                    src="Black White Circular Rustic Typography Badge Bar Restaurant Brewery Logo_processed.png"
+                    alt="Royal Cuisines Logo" class="logo">
+                <div class="brand-text">
+                    <h1 class="restaurant-name">The Royal's Cuisines</h1>
+                    <p class="brand-subtitle">A unit of Royal's Group Private
+                        Limited</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="basicpage.html">Home</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="#hotels">Hotel & Rooms</a></li>
+                    <li><a href="booktable.html">Book a Table</a></li>
+                    <li><a href="orderonline.html">Order Online</a></li>
+                    <li><a href="location.html">Our Locations</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="menu-container">
+
+            <div class="menu-box">
+                <h2>Menu Overview</h2>
+                <p>Explore our diverse menu featuring the finest cuisines.</p>
+                <img src="BBQ_Dine In Food Menu_Final-00_0.jpg"
+                    alt="Menu Overview" onclick="showFullScreen(this.src)">
+            </div>
+
+            <div class="menu-box">
+                <h2>Starters</h2>
+                <p>Begin your culinary journey with our delicious starters.</p>
+                <img src="BBQ_Dine In Food Menu_Final-01_0.jpg" alt="Starters"
+                    onclick="showFullScreen(this.src)">
+            </div>
+
+            <div class="menu-box">
+                <h2>Main Course</h2>
+                <p>Indulge in our rich and flavorful main courses.</p>
+                <img src="BBQ_Dine In Food Menu_Final-02_0.jpg"
+                    alt="Main Course" onclick="showFullScreen(this.src)">
+            </div>
+
+            <div class="menu-box">
+                <h2>Desserts</h2>
+                <p>End on a sweet note with our delightful desserts.</p>
+                <img src="BBQ_Dine In Food Menu_Final-03_0.jpg" alt="Desserts"
+                    onclick="showFullScreen(this.src)">
+            </div>
+        </div>
+
+        <div id="fullScreenContainer" class="fullscreen-img"
+            onclick="closeFullScreen()">
+            <img id="fullScreenImage" src alt="Full Screen View">
+        </div>
+    </body>
+
+    <footer class="footer">
+        <!-- Brand Logo Section (Centered at the Top) -->
+        <div class="brand-info">
+            <img src="Black White Circular Rustic Typography Badge Bar Restaurant Brewery Logo_processed.png" alt="The Royal Cuisines" class="brand-logo">
+            <h2>The Royal Cuisines</h2>
+            <p>Experience the taste of royalty</p>
+        </div>
+    
+        <!-- All Sections in One Line -->
+        <div class="footer-sections">
+            <!-- About Us -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Our Community</a></li>
+                </ul>
+            </div>
+    
+            <!-- Menu -->
+            <div class="footer-section">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Our Menus</a></li>
+                    <li><a href="#">Online Delivery</a></li>
+                    <li><a href="#">Deals and Offers</a></li>
+                </ul>
+            </div>
+    
+            <!-- Hotel & Rooms -->
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Catering Service</a></li>
+                    <li><a href="#">Hotel and Rooms</a></li>
+                    <li><a href="#">Events and Banquets</a></li>
+                </ul>
+            </div>
+    
+            <!-- Opening Hours (New Section) -->
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>Mon: 12:00 PM - 10:00 PM</li>
+                    <li>Tues: 12:00 PM - 10:00 PM</li>
+                    <li>Wed: 12:00 PM - 10:00 PM</li>
+                    <li>Thurs: 12:00 PM - 10:00 PM</li>
+                    <li>Fri: 12:00 APM - 10:00 PM</li>
+                    <li>Sat: 12:00 PM - 10:00 PM</li>
+                    <li>Sun: 12:00 PM - 11:00 PM</li>
+                </ul>
+            </div>
+    
+            <!-- Our Locations (Updated with Address, Phone & Google Map) -->
+            <div class="footer-section">
+                <h3>Our Location</h3>
+                <p>Little Mount, Guindy, Chennai, Tamil Nadu - 600032, India</p>
+                <p>Phone: +919111156789</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15555.25144419528!2d80.2178581!3d13.010559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzM4LjAiTiA4MMKwMTInNTYuMyJF!5e0!3m2!1sen!2sin!4v1700000000000"
+                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+    
+            <!-- Social Links (Aligned Like Other Sections) -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Royal Cuisines. All rights reserved.</p>
+        </div>
+    </footer>
+</html>
